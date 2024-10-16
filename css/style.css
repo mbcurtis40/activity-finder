@@ -11,7 +11,7 @@ body {
 }
 
 .text-container {
-  height: 100vh;
+  height: 20vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
 
 .text-container h1{
   margin: 0;
-  font-size: 125px;
+  font-size: 100px;
   color: rgba(225,225,225, .01);
   background-image: url("../images/beach.jpg");
   background-repeat: repeat;
@@ -30,7 +30,19 @@ body {
   text-transform: uppercase;
   font-weight: 900;
 }
+.plane{
+    animation: plane-animate 100s infinite;
+    position: relative;
+}
 
+@keyframes plane-animate {
+    0% {
+	left: 0;
+    }
+    100%{
+	left: 100%;
+    }
+}
   @keyframes animate {
     0%, 100% {
       background-position: left top;
