@@ -34,7 +34,6 @@ body {
     animation: plane-animate 100s infinite;
     position: relative;
 }
-
 @keyframes plane-animate {
     0% {
 	left: 0;
